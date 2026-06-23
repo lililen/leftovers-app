@@ -16,21 +16,24 @@ Leftovers is a smart fridge app that helps you figure out what to cook based on 
 
 ### Data model
 Relational schema held in a JS object (`initDB()`), mirroring a normalized SQL design:
-<ul style = "list-style-type: none;">
+
+<ul style="list-style-type: none;">
 <li>
+
 | Table | Purpose |
-| :---  | :---    |
-| `Household`          | Groups of users sharing a fridge 
-| `User`               | Individual users with spice tolerance 
-| `preferred_cuisines` | User → cuisine preferences (many-to-many) 
-| `Ingredient`.        | Master ingredient list 
-| `ingredient_tag`     | Tags per ingredient (protein, carb, etc.) 
-| `FoodItem`           | Items in a household's fridge with quantity + expiry 
-| `Recipe`             | Recipe metadata + step-by-step instructions 
-| `MadeOf`             | Recipe → ingredients with quantities (many-to-many) 
-| `RecipeLog`          | A completed cooking event with user rating 
-| `IsIn`               | Recipe → log entry (many-to-many) 
-| `SubstitutesFor`     | Ingredient substitution pairs 
+| :--- | :--- |
+| `Household`          | Groups of users sharing a fridge |
+| `User`               | Individual users with spice tolerance |
+| `preferred_cuisines` | User → cuisine preferences (many-to-many) |
+| `Ingredient`         | Master ingredient list |
+| `ingredient_tag`     | Tags per ingredient (protein, carb, etc.) |
+| `FoodItem`           | Items in a household's fridge with quantity + expiry |
+| `Recipe`             | Recipe metadata + step-by-step instructions |
+| `MadeOf`             | Recipe → ingredients with quantities (many-to-many) |
+| `RecipeLog`          | A completed cooking event with user rating |
+| `IsIn`               | Recipe → log entry (many-to-many) |
+| `SubstitutesFor`     | Ingredient substitution pairs |
+
 </li>
 </ul>
 
@@ -61,13 +64,15 @@ npm run dev
 ```
 
 ### Tab breakdown
-<ul style = "list-style-type: none;">
+<ul style="list-style-type: none;">
 <li>
+
 | Tab     | What it does |
 | :---    | :---         |
-| Fridge  | Add, edit quantity, delete food items; sorted by expiration urgency 
-| Recipes | Ranked recipe recommendations with expandable ingredient + instruction 
-| History | Cooking log with ratings and average score 
-| Ask     | AI assistant with full history context injected as system prompt 
+| Fridge  | Add, edit quantity, delete food items; sorted by expiration urgency |
+| Recipes | Ranked recipe recommendations with expandable ingredient + instruction |
+| History | Cooking log with ratings and average score |
+| Ask     | AI assistant with full history context injected as system prompt |
+
 </li>
 </ul>
