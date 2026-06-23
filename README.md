@@ -31,8 +31,8 @@ Relational schema held in a JS object (`initDB()`), mirroring a normalized SQL d
 | `RecipeLog`          | A completed cooking event with user rating 
 | `IsIn`               | Recipe → log entry (many-to-many) 
 | `SubstitutesFor`     | Ingredient substitution pairs 
-<li>
-<ul>
+</li>
+</ul>
 
 ### Key logic
 - **Recipe matching:** `getMatchInfo()` computes how many of a recipe's required ingredients are in the fridge, returning `have/total` for the match percentage
@@ -61,7 +61,7 @@ npm run dev
 ```
 
 ### Tab breakdown
-<ul style= "list-style-type:none;">
+<ul style = "list-style-type: none;">
 <li>
 | Tab     | What it does |
 | :---    | :---         |
@@ -69,5 +69,5 @@ npm run dev
 | Recipes | Ranked recipe recommendations with expandable ingredient + instruction 
 | History | Cooking log with ratings and average score 
 | Ask     | AI assistant with full history context injected as system prompt 
-<li>
-<ul>
+</li>
+</ul>
