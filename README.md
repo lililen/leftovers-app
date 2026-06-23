@@ -19,7 +19,7 @@ Relational schema held in a JS object (`initDB()`), mirroring a normalized SQL d
 <ul style = "list-style-type: none;">
 <li>
 | Table | Purpose |
------------------------------------------------------------------------------------
+| :---  | :---    |
 | `Household`          | Groups of users sharing a fridge 
 | `User`               | Individual users with spice tolerance 
 | `preferred_cuisines` | User → cuisine preferences (many-to-many) 
@@ -64,7 +64,7 @@ npm run dev
 <ul style= "list-style-type:none;">
 <li>
 | Tab     | What it does |
------------------------------------------------------------------------------------
+| :---    | :---         |
 | Fridge  | Add, edit quantity, delete food items; sorted by expiration urgency 
 | Recipes | Ranked recipe recommendations with expandable ingredient + instruction 
 | History | Cooking log with ratings and average score 
