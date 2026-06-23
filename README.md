@@ -16,7 +16,8 @@ Leftovers is a smart fridge app that helps you figure out what to cook based on 
 
 ### Data model
 Relational schema held in a JS object (`initDB()`), mirroring a normalized SQL design:
-
+<ul style = "list-style-type: none;">
+<li>
 | Table | Purpose |
 -----------------------------------------------------------------------------------
 | `Household`          | Groups of users sharing a fridge 
@@ -30,6 +31,8 @@ Relational schema held in a JS object (`initDB()`), mirroring a normalized SQL d
 | `RecipeLog`          | A completed cooking event with user rating 
 | `IsIn`               | Recipe → log entry (many-to-many) 
 | `SubstitutesFor`     | Ingredient substitution pairs 
+<li>
+<ul>
 
 ### Key logic
 - **Recipe matching:** `getMatchInfo()` computes how many of a recipe's required ingredients are in the fridge, returning `have/total` for the match percentage
@@ -58,9 +61,13 @@ npm run dev
 ```
 
 ### Tab breakdown
+<ul style= "list-style-type:none;">
+<li>
 | Tab     | What it does |
 -----------------------------------------------------------------------------------
 | Fridge  | Add, edit quantity, delete food items; sorted by expiration urgency 
-| Recipes | Ranked recipe recommendations with expandable ingredient + instruction  
+| Recipes | Ranked recipe recommendations with expandable ingredient + instruction 
 | History | Cooking log with ratings and average score 
 | Ask     | AI assistant with full history context injected as system prompt 
+<li>
+<ul>
