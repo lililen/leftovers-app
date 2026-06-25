@@ -4,6 +4,9 @@
 
 Leftovers is a smart fridge app that helps you figure out what to cook based on what you already have at home. You log what's in your fridge, and it recommends recipes ranked by how many ingredients you actually own so the recipes you can make right now show up first. It also flags ingredients that are about to expire so nothing goes to waste. If you're missing an ingredient, it checks whether you have a substitute. Once you cook something, you can rate it and track your cooking history. There's also a built-in AI assistant you can ask questions like "what should I cook tonight?" and it answers based on your actual fridge and preferences.
 
+## Google Drive Files:
+https://drive.google.com/drive/folders/1rpYUj7ezamQ6YbiRA8E0VYYIuqr7RCfd?usp=sharing
+
 -----------------------------------------------------------------------------------
 
 ## Technical Summary
